@@ -43,10 +43,10 @@ Clone this repo.
 
 Download the spaCy source code.
 
-Copy build_scripts/build_spacy_arm64.bat into the root of the spaCy source folder.
+Copy build_scripts/force_build_arm64.bat into the root of the spaCy source folder.
 
 3. Run the Builder
-Right-click build_spacy_arm64.bat and select Run as Administrator.
+Right-click force_build_arm64.bat and select Run as Administrator.
 
 The script will:
 
