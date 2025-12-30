@@ -24,7 +24,7 @@ pip install spacy-3.x.x-cp311-cp311-win_arm64.whl
 ```
 
 
-🛠️ How to Build from Source
+## 🛠️ How to Build from Source
 If you need to build it yourself (e.g., for a different python version), follow these steps.
 
 1. Prerequisites
