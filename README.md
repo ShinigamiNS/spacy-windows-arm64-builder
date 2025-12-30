@@ -28,34 +28,36 @@ pip install spacy-3.x.x-cp311-cp311-win_arm64.whl
 If you need to build it yourself (e.g., for a different python version), follow these steps.
 
 1. Prerequisites
-Install Visual Studio Build Tools 2022. In the "Individual Components" tab, ensure these are checked:
-
-MSVC v143 - VS 2022 C++ ARM64/ARM64EC build tools
-
-C++ Clang Compiler for Windows
-
-Windows 11 SDK (10.0.22621.0) (Critical for libcmt.lib)
-
-C++ ATL for v143 build tools (ARM64)
+    * Install Visual Studio Build Tools 2022. In the "Individual Components" tab, ensure these are checked:
+    
+    * MSVC v143 - VS 2022 C++ ARM64/ARM64EC build tools
+    
+    * C++ Clang Compiler for Windows
+  
+    * Windows 11 SDK (10.0.22621.0) (Critical for libcmt.lib)
+  
+    * C++ ATL for v143 build tools (ARM64)
 
 2. Setup
-Clone this repo.
-
-Download the spaCy source code.
-
-Copy "build_scripts/force_build_arm64.bat" into the root of the spaCy source folder.
+   
+    * Clone this repo.
+    
+    * Download the spaCy source code.
+    
+    * Copy "build_scripts/force_build_arm64.bat" into the root of the spaCy source folder.
 
 3. Run the Builder
-Right-click -> "force_build_arm64.bat" and select Run as Administrator.
 
-The script will:
-
-  Detect your Python installation automatically.
-  
-  Create a temp shim folder (C:\cls_shim).
-  
-  Install build dependencies (cython, numpy).
-  
-  Compile the project using the Clang shim.
-  
-  Output the final .whl file in the dist/ folder.
+    Right-click -> "force_build_arm64.bat" and select Run as Administrator.
+    
+    The script will:
+    
+      * Detect your Python installation automatically.
+      
+      * Create a temp shim folder (C:\cls_shim).
+      
+      * Install build dependencies (cython, numpy).
+      
+      * Compile the project using the Clang shim.
+      
+      * Output the final .whl file in the dist/ folder.
